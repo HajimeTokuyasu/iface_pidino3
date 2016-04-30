@@ -16,7 +16,7 @@ enum {
 }
 
 enum {
-  CW_PIN,//2
+  CW_PIN = 2,
   CCW_PIN,//3
   ACCEL_PIN = 8,
   BACK_GEAR_PIN//9
