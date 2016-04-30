@@ -1,8 +1,8 @@
 enum {
-  STEER_MOVE_PIN,
-  STEER_DIR_PIN,
-  LINEAR_MOVE_PIN,
-  LINEAR_DIR_PIN
+  STEER_MOVE_PIN = 4,
+  STEER_DIR_PIN,//5
+  LINEAR_MOVE_PIN,//6
+  LINEAR_DIR_PIN//7
 }
 
 enum {
@@ -23,8 +23,14 @@ enum {
 }
 
 void setup(){
-  //pinMode(, INPUT);
-  //pinMode(, OUTPUT);
+  pinMode(STEER_MOVE_PIN, INPUT);
+  pinMode(STEER_DIR_PIN, INPUT);
+  pinMode(LINEAR_MOVE_PIN, INPUT);
+  pinMode(LINEAR_DIR_PIN, INPUT);
+  pinMode(CW_PIN, OUTPUT);
+  pinMode(CCW_PIN, OUTPUT);
+  pinMode(ACCEL_PIN, OUTPUT);
+  pinMode(BACK_GEAR_PIN, OUTPUT);
 }
 
 void loop(){
